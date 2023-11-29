@@ -65,3 +65,8 @@ img{
     list-style: none; /* enlève les puces par défaut */
     gap: 1rem; /* espace entre les enfants */
  }
+
+ li.actif {
+  background-color:rgb(240, 14, 14);
+  
+}
