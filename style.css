@@ -60,13 +60,24 @@ img{
   .caroussel_liste-liens {
     display: flex; /* aligne horizontalement les enfants */
      justify-content: center;  /* centre horizontalement les enfants */
-   margin: 0;  /* enlève les marges par défaut */
+   margin: 20px;  /* enlève les marges par défaut  */
     padding: 0; /* enlève les padding par défaut */
     list-style: none; /* enlève les puces par défaut */
     gap: 1rem; /* espace entre les enfants */
  }
 
- li.actif {
-  background-color:rgb(240, 14, 14);
-  
+ 
+
+a.caroussel_lien.actif {
+  border-width: 8px;
+  background-color:rgb(208, 155, 224);
+}
+
+a{
+  text-decoration:none;
+  border:2px solid rgb(233, 33, 33);
+  border-radius:5px;
+  padding:10px;
+  color:rgb(14, 0, 0);
+  background-color:rgb(197, 142, 142);
 }
