@@ -1,13 +1,20 @@
 *{
     box-sizing:border-box; /* change le box model */
 }
+ body{
+  background-color: rgb(224, 137, 137);
+ }
 
+ 
 img{
     max-width:100%;  /* image responsive, largeur maxi */
     height:auto; /* hauteur "auto" */
-    margin:50px
+    margin:50px; 
+    border-radius: 10%;
     
 }
+
+
 
 
 .carrousel_parent-ecrans {
@@ -19,11 +26,17 @@ img{
 
 }
 
-.carrousel_ecran {
-    width: 100%;/* largeur du parent pour chaque enfant */
-    flex: none;/* permet de garder toute la largeur du parent */
+
+
+  .carrousel_ecran{
+    width:100%; /* largeur du parent pour chaque enfant*/
+    flex:none; /* permet de garder toute la largeur du parent */
+    display: flex;
     scroll-snap-align: start; /* aligne les enfants par blocs */
-  }
+    justify-content: center;
+    align-items: center;
+    
+}
   .carrousel_ecran figure {
     margin: 0 20px 0 20px;/* enlève les marges par défaut */
   }
@@ -38,12 +51,13 @@ img{
     transform: translateY(-50%); /* methode du point mort */
     width: 2rem;
     height: 2rem;
-    background: rgba(0,0,0,0.5);
+    background: rgba(230, 9, 9, 0.5);
     border-radius: 50%;
     border: none;
     display: grid;
     place-content: center;
-    color: #fff;
+    color: #181717;
+   
   }
   
   .carrousel_btn-avant {
@@ -78,6 +92,20 @@ a{
   border:2px solid rgb(233, 33, 33);
   border-radius:5px;
   padding:10px;
-  color:rgb(14, 0, 0);
+  color:rgb(216, 15, 15);
   background-color:rgb(197, 142, 142);
+ 
+}
+
+h1 {
+  text-align : center;
+  font-size: 55px;
+  color: rgb(228, 11, 47);
+}
+
+figcaption{
+  text-align : center;
+  font-size: 30px;
+  padding: 20px;
+  color: rgb(228, 11, 47);
 }
